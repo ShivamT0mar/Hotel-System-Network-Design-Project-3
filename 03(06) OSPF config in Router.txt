@@ -1,0 +1,31 @@
+Router_1__First_Floor(config)#router ospf 80 
+Router_1__First_Floor(config-router)#network 192.168.8.0 255.255.255.0 area 0 
+Router_1__First_Floor(config-router)#network 192.168.7.0 255.255.255.0 area 0 
+Router_1__First_Floor(config-router)#network 192.168.6.0 255.255.255.0 area 0 
+Router_1__First_Floor(config-router)#network 10.10.10.9 255.255.255.252 area 0 
+Router_1__First_Floor(config-router)#network 10.10.10.1 255.255.255.252 area 0 
+
+
+
+Secound Floor Router
+
+
+
+Router_2___Second_Floor(config)#router ospf 50 
+Router_2___Second_Floor(config-router)#network 192.168.5.0 255.255.255.0 area 0 
+Router_2___Second_Floor(config-router)#network 192.168.4.0 255.255.255.0 area 0 
+Router_2___Second_Floor(config-router)#network 192.168.3.0 255.255.255.0 area 0 
+Router_2___Second_Floor(config-router)#network 10.10.10.10 255.255.255.252 area 0 
+Router_2___Second_Floor(config-router)#network 10.10.10.6 255.255.255.252 area 0 
+
+
+
+Third Floor Router
+
+
+
+Router_3___Third_Floor(config)#router ospf 20 
+Router_3___Third_Floor(config-router)#network 192.168.2.0 255.255.255.0 area 0 
+Router_3___Third_Floor(config-router)#network 192.168.1.0 255.255.255.0 area 0 
+Router_3___Third_Floor(config-router)#network 10.10.10.2 255.255.255.252 area 0 
+Router_3___Third_Floor(config-router)#network 10.10.10.5 255.255.255.252 area 0 

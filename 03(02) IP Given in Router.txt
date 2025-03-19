@@ -1,0 +1,56 @@
+Router_1__First_Floor(config)#int s0/3/0
+Router_1__First_Floor(config-if)#ip address 10.10.10.1 255.255.255.252
+Router_1__First_Floor(config-if)#clock rate 64000
+Router_1__First_Floor(config-if)#no shut
+Router_1__First_Floor(config-if)#exit
+
+
+Router_1__First_Floor(config)#int s0/3/1
+Router_1__First_Floor(config-if)#ip address 10.10.10.9 255.255.255.252
+Router_1__First_Floor(config-if)#no shut
+Router_1__First_Floor(config-if)#exit
+
+
+Router_1__First_Floor(config)#int g0/0
+Router_1__First_Floor(config-if)#no shut
+Router_1__First_Floor(config-if)#exit
+
+			Router Second Floor
+
+Router_2___Second_Floor(config)#int s0/3/0
+Router_2___Second_Floor(config-if)#ip address 10.10.10.10 255.255.255.252
+Router_2___Second_Floor(config-if)#clock rate 64000
+Router_2___Second_Floor(config-if)#no shut
+Router_2___Second_Floor(config-if)#exit
+
+
+Router_2___Second_Floor(config)#int s0/2/1
+Router_2___Second_Floor(config-if)#ip address 10.10.10.6 255.255.255.252
+Router_2___Second_Floor(config-if)#no shut
+Router_2___Second_Floor(config-if)#exit
+
+
+Router_2___Second_Floor(config)#int g0/0 
+Router_2___Second_Floor(config-if)#no shut 
+Router_2___Second_Floor(config-if)#exit 
+
+			Router Third Floor
+
+Router_3___Third_Floor(config)#int s0/3/1
+Router_3___Third_Floor(config-if)#ip address 10.10.10.2 255.255.255.252
+Router_3___Third_Floor(config-if)#no shut
+Router_3___Third_Floor(config-if)#exit
+
+
+Router_3___Third_Floor(config)#int s0/2/0
+Router_3___Third_Floor(config-if)#ip address 10.10.10.5 255.255.255.252
+Router_3___Third_Floor(config-if)#clock rate 64000
+Router_3___Third_Floor(config-if)#no shut
+Router_3___Third_Floor(config-if)#exit
+
+
+Router_3___Third_Floor(config)#int g0/0 
+Router_3___Third_Floor(config-if)#no shut 
+Router_3___Third_Floor(config-if)#exit 
+  
+  

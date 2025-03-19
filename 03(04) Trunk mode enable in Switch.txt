@@ -1,0 +1,12 @@
+Floor_First(config)#int g0/1
+Floor_First(config-if)#switchport mode trunk
+
+
+
+Floor_Second(config)#int g0/1
+Floor_Second(config-if)#switchport mode trunk
+
+
+
+Floor_Third(config)#int g0/1
+Floor_Third(config-if)#switchport mode trunk

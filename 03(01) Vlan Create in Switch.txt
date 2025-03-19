@@ -1,0 +1,70 @@
+                First Floor Switch
+
+Floor_First(config)#vlan 80
+Floor_First(config-vlan)#name Reception
+Floor_First(config-vlan)#int range f0/1-2
+Floor_First(config-if-range)#switchport access vlan 80
+Floor_First(config-if-range)#exit
+
+
+Floor_First(config)#vlan 70
+Floor_First(config-vlan)#name Store
+Floor_First(config-vlan)#int range f0/3-4
+Floor_First(config-if-range)#switchport access vlan 70
+Floor_First(config-if-range)#exit
+
+
+Floor_First(config)#vlan 60
+Floor_First(config-vlan)#name Logistics
+Floor_First(config-vlan)#int range f0/5-6
+Floor_First(config-if-range)#switch access vlan 60
+Floor_First(config-if-range)#exit
+Floor_First(config)#do wr
+
+
+
+                Second Floor Switch
+
+
+
+Floor_Second(config)#vlan 50
+Floor_Second(config-vlan)#name Finance
+Floor_Second(config-vlan)#int range f0/1-2
+Floor_Second(config-if-range)#switchport access vlan 50
+Floor_Second(config-if-range)#exit
+
+
+Floor_Second(config)#vlan 40
+Floor_Second(config-vlan)#name HR
+Floor_Second(config-vlan)#int range f0/3-4
+Floor_Second(config-if-range)#switchport access vlan 40
+Floor_Second(config-if-range)#exit
+
+
+Floor_Second(config)#vlan 30
+Floor_Second(config-vlan)#name Sales
+Floor_Second(config-vlan)#int range f0/5-6
+Floor_Second(config-if-range)#switchport access vlan 30
+Floor_Second(config-if-range)#exit
+Floor_Second(config)#do wr
+
+
+
+                Third floor switch
+
+
+
+
+Floor_Third(config)#vlan 20
+Floor_Third(config-vlan)#name Admin
+Floor_Third(config-vlan)#int range f0/1-2
+Floor_Third(config-if-range)#switchport access vlan 20
+Floor_Third(config-if-range)#exit
+
+
+Floor_Third(config)#vlan 10
+Floor_Third(config-vlan)#name IT
+Floor_Third(config-vlan)#int range f0/3-4
+Floor_Third(config-if-range)#switchport access vlan 10
+Floor_Third(config-if-range)#exit
+Floor_Third(config)#do wr

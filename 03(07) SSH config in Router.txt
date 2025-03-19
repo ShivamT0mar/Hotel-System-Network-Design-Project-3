@@ -1,0 +1,32 @@
+Router_1__First_Floor(config)#ip domain name First_Floor_Router1 
+Router_1__First_Floor(config)#crypto key generate rsa 
+Router_1__First_Floor(config)#line vty 0 
+Router_1__First_Floor(config-line)#transport input ssh 
+Router_1__First_Floor(config-line)#login local 
+Router_1__First_Floor(config-line)#username First_Floor_Router1 password 1234 
+
+
+
+Secound Floor Router
+
+
+
+Router_2___Second_Floor(config)#ip domain name Second_Floor_Router2 
+Router_2___Second_Floor(config)#crypto key generate rsa 
+Router_2___Second_Floor(config)#line vty 0 
+Router_2___Second_Floor(config-line)#transport input ssh 
+Router_2___Second_Floor(config-line)#login local 
+Router_2___Second_Floor(config-line)#username Second_Floor_Router2 password 1234
+
+
+
+Third Floor Router
+
+
+
+Router_3___Third_Floor(config)#ip domain name Third_Floor_Router3 
+Router_3___Third_Floor(config)#crypto key generate rsa 
+Router_3___Third_Floor(config)#line vty 0 
+Router_3___Third_Floor(config-line)#transport input ssh 
+Router_3___Third_Floor(config-line)#login local 
+Router_3___Third_Floor(config-line)#username Third_Floor_Router3 password 1234 

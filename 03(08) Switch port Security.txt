@@ -1,0 +1,6 @@
+Floor_Third(config)#int f0/3 
+Floor_Third(config-if)#switchport mode access 
+Floor_Third(config-if)#switchport port-security 
+Floor_Third(config-if)#switchport port-security mac-address 0040.0B74.14E3 
+Floor_Third(config-if)#switchport port-security maximum 1 
+Floor_Third(config-if)#switchport port-security violation shutdown 

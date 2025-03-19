@@ -1,0 +1,56 @@
+Router_1__First_Floor(config)#int g0/0.8
+Router_1__First_Floor(config-subif)#encapsulation dot1Q 80
+Router_1__First_Floor(config-subif)#ip address 192.168.8.1 255.255.255.0
+Router_1__First_Floor(config-subif)#exit
+
+
+Router_1__First_Floor(config)#int g0/0.7
+Router_1__First_Floor(config-subif)#encapsulation dot1Q 70
+Router_1__First_Floor(config-subif)#ip address 192.168.7.1 255.255.255.0
+Router_1__First_Floor(config-subif)#exit
+
+
+Router_1__First_Floor(config)#int g0/0.6
+Router_1__First_Floor(config-subif)#encapsulation dot1Q 60
+Router_1__First_Floor(config-subif)#ip address 192.168.6.1 255.255.255.0
+Router_1__First_Floor(config-subif)#exit
+
+
+
+			Secound Floor Router
+
+
+
+Router_2___Second_Floor(config)#int g0/0.5 
+Router_2___Second_Floor(config-subif)#encapsulation dot1Q 50 
+Router_2___Second_Floor(config-subif)#ip address 192.168.5.1 255.255.255.0 
+Router_2___Second_Floor(config-subif)#exit 
+ 
+ 
+Router_2___Second_Floor(config)#int g0/0.4 
+Router_2___Second_Floor(config-subif)#encapsulation dot1Q 40 
+Router_2___Second_Floor(config-subif)#ip address 192.168.4.1 255.255.255.0 
+Router_2___Second_Floor(config-subif)#exit 
+ 
+ 
+Router_2___Second_Floor(config)#int g0/0.3 
+Router_2___Second_Floor(config-subif)#encapsulation dot1Q 30 
+Router_2___Second_Floor(config-subif)#ip address 192.168.3.1 255.255.255.0
+Router_2___Second_Floor(config-subif)#exit 
+
+
+
+			Third Floor Router
+
+
+
+Router_3___Third_Floor(config)#int g0/0.2 
+Router_3___Third_Floor(config-subif)#encapsulation dot1Q 20 
+Router_3___Third_Floor(config-subif)#ip address 192.168.2.1 255.255.255.0 
+Router_3___Third_Floor(config-subif)#exit 
+  
+  
+Router_3___Third_Floor(config)#int g0/0.1 
+Router_3___Third_Floor(config-subif)#encapsulation dot1Q 10 
+Router_3___Third_Floor(config-subif)#ip address 192.168.1.1 255.255.255.0 
+Router_3___Third_Floor(config-subif)#exit  
